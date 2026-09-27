@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090A0B">
+  <meta name="description" content="FitHub — your complete fitness ecosystem. Memberships, attendance, workouts, payments and gym management in one platform.">
+  <title>FitHub — Train. Track. Grow.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090A0B'/%3E%3Cpath d='M18 14h28v9H28v6h15v9H28v12H18z' fill='%23F0441D'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Application root: views are rendered here by script.js (hash router) -->
+  <div id="app" aria-live="off"></div>
+
+  <!-- Reusable modal layer -->
+  <div id="modal-root" class="modal-root" hidden></div>
+
+  <!-- Toast notification layer -->
+  <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="false"></div>
+
+  <!-- Shared SVG definitions (chart gradients) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#F0441D" stop-opacity=".28"/>
+        <stop offset="100%" stop-color="#F0441D" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <noscript>
+    <div style="padding:40px;text-align:center;font-family:sans-serif;color:#F5F5F2;background:#090A0B">
+      FitHub requires JavaScript to run. Please enable JavaScript in your browser.
+    </div>
+  </noscript>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
